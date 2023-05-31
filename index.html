@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link al css -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Git</title>
+</head>
+
+<body>
+
+    <section>
+        <article class="header">
+            <h1>Pasos para usar git</h1>
+        </article>
+        <ul>
+            <li>Configurando git</li>
+            <li>
+                <span>
+                    git config --global user.name "mi nombre"
+                </span>
+                - Configura el nombre de usuario de git
+            </li>
+            <li>
+                <span>
+                    git config --global user.email miemail@ejemplo.com
+                </span>
+                - Configura el email del usuario en git
+            </li>
+        </ul>
+        <ul>
+            <li>Iniciando git</li>
+            <li>
+                <span>
+                    git init
+                </span>
+                - Inicia un repositorio de git en nuestro proyecto, esto <span class="red"> se hace 1 sola vez</span>
+                por proyecto.
+            </li>
+        </ul>
+
+        <ul>
+            <li>Trabajando con git</li>
+            <li>
+                <span>
+                    git add .
+                </span>
+                - Podemos usar el "." para guardar todos los archivos creados u modificados, o guardar archivo por
+                archivo con su nombre.
+            </li>
+            <li>
+                <span>
+                    git commit -m "titulo del commit, mientras mas detalles de lo que hice mejor"
+                </span>
+            <li>
+                <span>
+                    git status
+                </span>
+                - Verifica en que estado estamos, y ademas para saber si tengo elementos para guardar y hacer commit.
+            </li>
+            <li>
+                <span>
+                    git log
+                </span>
+                - Muestra una lista de los commits realizados.
+            </li>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                Trabajando con ramas
+            </li>
+            <li>
+                <span>
+                    git branch
+                </span>
+                - Con este comando veo el listado de ramas creadas.
+            </li>
+            <li>
+                <span>
+                    git branch nombre-de-rama
+                </span>
+                - Para crear una rama nueva.
+            </li>
+            <li>
+                <span>
+                    git checkout nombre-de-rama
+                </span>
+                - Con este comando me muevo a la rama seleccionada.
+            </li>
+            <li>
+                <span>
+                    git merge nombre-de-rama
+                </span>
+                - !IMPORTANTE¡ Debo estar parado en la rama en la cual deseo traer los cambios de la rama externa. (es
+                decir si quiero traerme los cambios de la rama2 a main , debo estar parado en main)
+            </li>
+            <li>
+                <span>
+                    git branch -m nombre-actual nuevo-nombre
+                </span>
+                - Con este comando renombro la rama actual por el nombre de la nueva rama.
+            </li>
+            <li>
+                <span>
+                    git branch -d nombre-de-rama
+                </span>
+                - Comando para borrar la rama local en git.
+            </li>
+            <li>
+                <span>
+                    git push origin --delete nombre-de-rama
+                </span>
+                - Comando para borrar la rama online en github.
+            </li>
+        </ul>
+        <ul>
+            <li>Trabajando de forma remota con GITHUB</li>
+            <li>
+                <span>
+                    git remote add origin url-repositorio
+                </span>
+                - Conecta mi repo local al repo online de github
+            </li>
+            <li>
+                <span>
+                    git remote -v
+                </span>
+                - Me muestra el url del repo online en github.
+            </li>
+            <li>
+                <span>
+                    git push -u origin main
+                </span>
+                - Empuja los cambios de mi repo local al repo de github. !ATENCION¡ el origin "main" puede ser
+                reemplazado por el nombre de la rama que quieren pushear "git push -u origin otra-rama".
+            </li>
+            <li>
+                <span>
+                    git remote rm origin
+                </span>
+                - Este comando borra la conexion del repo local con el repo online de github. (Hecho esto hacer el paso
+                de git remote add origin para conectar el nuevo repositorio online)
+            </li>
+            <li>
+                <span>
+                    git clone url-del-repo-online
+                </span>
+                - Crea un clon del repo de github en mi repo local.
+            </li>
+            <li>
+                <span>
+                    git pull
+                </span>
+                - Trae todos los cambios que existan en la rama online de github.
+            </li>
+            <li>
+                <span>
+                    git fetch
+                </span>
+                - Trae todos los cambios que existan en todas las ramas online de github.
+            </li>
+        </ul>
+    </section>
+
+</body>
+
+</html>
