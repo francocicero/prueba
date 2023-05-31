@@ -1,0 +1,15 @@
+//En el style van los Impots
+//IMPORTS
+@import 'base/vars';
+@import 'base/reset';
+
+//IMPORTS COMPONENTS
+@import 'components/navbar';
+@import 'components/footer';
+
+//IMPORTS LAYOUT
+@import 'layout/index';
+@import 'layout/contacto.scss';
+@import 'layout/galeria.scss';
+//mediaquaries siempre al final
+@import 'layout/mediaqueries';

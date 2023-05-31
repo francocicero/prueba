@@ -1,0 +1,65 @@
+body{
+    padding: 40px;
+
+    h1{
+        font-size: 24px;
+        font-weight: bold;
+        font-family:$main-font;
+        color: $main-color;
+        padding: 20px 0;
+        &:hover{
+            color: aqua;
+        }
+    }
+    
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #eeee;
+    border: 2px solid black;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: $main-font;
+
+    li{
+        border: 1px solid black;
+    } 
+    
+    span{
+        color:$main-color;
+    }
+    a{
+        color: red;
+    }
+}
+
+.cajas{
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .caja{
+        background-color: $main-color;
+        color: antiquewhite;
+        padding: 20px;
+
+        &-title{
+            color: red;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: $main-font;
+        }
+
+        p{
+            font-size: 20px;
+            font-weight: bold;
+            font-family: $main-font;
+        }
+    }
+}

@@ -1,33 +1,66 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    padding: 40px;
+body {
+  padding: 40px;
+}
+body h1 {
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(200, 85, 43);
+  padding: 20px 0;
+}
+body h1:hover {
+  color: aqua;
 }
 
-h1{
-    font-size: 24px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: coral;
-    padding: 20px 0;
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  border: 2px solid black;
+  padding: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+ul li {
+  border: 1px solid black;
+}
+ul span {
+  color: rgb(200, 85, 43);
+}
+ul a {
+  color: red;
 }
 
-ul{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    background-color: #eeee;
-    border: 2px solid black;
-    padding: 40px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.cajas {
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cajas .caja {
+  background-color: rgb(200, 85, 43);
+  color: antiquewhite;
+  padding: 20px;
+}
+.cajas .caja-title {
+  color: red;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cajas .caja p {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-ul li span{
-    color:coral;
-}
+/*# sourceMappingURL=style.css.map */
