@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 40px;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: coral;
+    padding: 20px 0;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #eeee;
+    border: 2px solid black;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul li span{
+    color:coral;
+}
